@@ -1,6 +1,4 @@
 *.lock
 *.org
-*.png
-*.jpg
 .DS_Store
 resources
