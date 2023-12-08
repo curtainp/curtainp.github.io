@@ -1,10 +1,10 @@
 +++
 title = "Flare2-challenge-01"
+author = ["curtainp"]
 date = 2023-11-28T17:28:00+08:00
-lastmod = 2023-11-28T17:28:32+08:00
+lastmod = 2023-12-01T12:02:24+08:00
 tags = ["fireeye", "reverse-enginerring", "ctf", "flare"]
 categories = ["Security"]
-author = ["curtainp"]
 draft = false
 +++
 
@@ -13,7 +13,7 @@ draft = false
 下载 [flare_on_start_2015](https://www.flare-on.com/files/Flare-On_start_2015.exe) 后，首先使用[DIE](https://github.com/horsicq/Detect-It-Easy) 查看文件信息：
 ![](/imgs/202311181417518.png)
 
-检测到该文件是[cabinet_format](https://en.wikipedia.org/wiki/Cabinet) 格式（一种压缩格式，运行时自解压）。运行之后会提示同意EULA 并选择解压位置，解压之后再次查看文件信息：
+检测到该文件是[cabinet_format](https://en.wikipedia.org/wiki/Cabinet) 格式（一种压缩格式，运行时自解压）。运行之后会提示同意 EULA 并选择解压位置，解压之后再次查看文件信息：
 ![](/imgs/202311181424621.png)
 
 可以看到是一个 PE32 控制台程序，查看其导入表，仅导入了 `kernel32.dll` ，导入到符号如下：
@@ -25,7 +25,7 @@ draft = false
 5.  [ReadFile](https://learn.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-readfile)
 6.  [WriteFile](https://learn.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-writefile)
 
-跟文件IO和标准流操作相关的函数，使用 **IDA Pro** 静态分析，可以看到程序逻辑非常简单，仅仅有一个 `start` 函数，主体逻辑也一目了然：
+跟文件 IO 和标准流操作相关的函数，使用 **IDA Pro** 静态分析，可以看到程序逻辑非常简单，仅仅有一个 `start` 函数，主体逻辑也一目了然：
 ![](/imgs/202311181517749.png)
 
 
