@@ -6,7 +6,7 @@ lastmod = 2023-12-01T12:02:24+08:00
 draft = false
 
 [taxonomies]
-tags = ["fireeye", "reverse-enginerring", "ctf", "flare"]
+tags = ["FireEye", "Rev", "CTF"]
 categories = ["Security"]
 
 [extra]

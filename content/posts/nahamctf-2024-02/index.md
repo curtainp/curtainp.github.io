@@ -4,7 +4,7 @@ author= "curtainp"
 date= 2024-05-28
 
 [taxonomies]
-tags=["ctf", "rev"]
+tags=["CTF", "Rev"]
 categories= [ "Security"]
 
 [extra]
