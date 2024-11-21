@@ -5,7 +5,7 @@ date= 2024-05-28T14:22:40+08:00
 
 [taxonomies]
 tags=["CTF", "Rev"]
-categories= [ "Security"]
+categories= [ "Writeups"]
 
 [extra]
 toc = true

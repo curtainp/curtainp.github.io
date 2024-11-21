@@ -7,7 +7,7 @@ draft = false
 
 [taxonomies]
 tags = ["Rust", "Hacking"]
-categories = ["Security"]
+categories = ["Programming"]
 
 [extra]
 toc = true

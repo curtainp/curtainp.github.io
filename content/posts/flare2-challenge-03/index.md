@@ -7,7 +7,7 @@ draft = false
 
 [taxonomies]
 tags = ["FireEye", "Rev", "CTF"]
-categories = ["Security"]
+categories = ["Writeups"]
 
 [extra]
 toc = true

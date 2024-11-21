@@ -4,8 +4,8 @@ author = ["curtainp"]
 date = 2024-11-19
 
 [taxonomies]
-tags = ["CTF", "writeups", "Web", "JWT", "SSTI"]
-categories = ["Security"]
+tags = ["CTF", "Web", "JWT", "SSTI"]
+categories = ["Writeups"]
 
 [extra]
 toc = true
