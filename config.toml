@@ -39,6 +39,8 @@ bio = "enjoy coding and living"                          # Your bio
 avatar = "img/avatar.webp"            # Your avatar
 links = [                             # Your links
     { name = "GitHub", icon = "github", url = "https://github.com/curtainp" },
+    { name = "Mastodon", icon = "mastodon", url = "https://fosstodon.org/@curtain" },
+    { name = "Bluesky", icon = "bluesky", url = "https://bsky.app/profile/curtainw.bsky.social" },
     { name = "Twitter", icon = "twitter", url = "https://x.com/curta1np" },
     { name = "Email", icon = "email", url = "mailto:w1410768946@gmail.com" },
 ]
